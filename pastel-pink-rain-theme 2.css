@@ -1,0 +1,107 @@
+/**
+ * Pastel Pink Discord Theme 🌸🩷
+ * Made for a soft, all-pink look.
+ */
+
+:root {
+  --pink-bg: #f7c9d9;
+  --pink-bg-dark: #edb0c6;
+  --pink-bg-light: #fbd8e4;
+  --pink-hover: #f2b8cd;
+  --pink-active: #eaa0bd;
+  --pink-text: #7d4058;
+  --pink-text-light: #fff0f5;
+  --pink-accent: #e98caf;
+}
+
+/* Main Discord surfaces */
+.theme-dark,
+.theme-light {
+  --background-primary: var(--pink-bg);
+  --background-secondary: var(--pink-bg-dark);
+  --background-secondary-alt: var(--pink-bg);
+  --background-tertiary: var(--pink-bg-dark);
+  --background-floating: var(--pink-bg-light);
+  --channeltextarea-background: var(--pink-bg-light);
+  --background-modifier-hover: var(--pink-hover);
+  --background-modifier-active: var(--pink-active);
+  --background-modifier-selected: var(--pink-active);
+  --background-modifier-accent: var(--pink-hover);
+
+  --text-normal: var(--pink-text);
+  --text-muted: #a35d76;
+  --text-link: #c65d82;
+  --header-primary: #74354f;
+  --header-secondary: #9a526d;
+
+  --interactive-normal: #87445f;
+  --interactive-hover: #6f304a;
+  --interactive-active: #5d263e;
+  --interactive-muted: #b9788e;
+
+  --brand-experiment: var(--pink-accent);
+  --button-secondary-background: var(--pink-hover);
+  --button-secondary-background-hover: var(--pink-active);
+}
+
+/* Server/channel sidebar */
+[class*="sidebar"] {
+  background: var(--pink-bg-dark) !important;
+}
+
+/* Chat */
+[class*="chat"] {
+  background: var(--pink-bg) !important;
+}
+
+/* Message input */
+[class*="channelTextArea"] {
+  background: var(--pink-bg-light) !important;
+}
+
+/* Members list */
+[class*="membersWrap"],
+[class*="members"] {
+  background: var(--pink-bg-dark) !important;
+}
+
+/* Selected / hovered channels */
+[class*="modeSelected"],
+[class*="wrapper"]:hover {
+  background: var(--pink-hover) !important;
+}
+
+/* Top bars */
+[class*="title"] {
+  background: var(--pink-bg) !important;
+}
+
+/* Popouts and menus */
+[class*="menu"],
+[class*="popout"] {
+  background: var(--pink-bg-light) !important;
+}
+
+/* Search boxes */
+[class*="searchBar"] {
+  background: var(--pink-bg-light) !important;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar-thumb {
+  background: var(--pink-active) !important;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--pink-bg-dark) !important;
+}
+
+/* Links */
+a {
+  color: #c65d82 !important;
+}
+
+/* Mentions */
+[class*="mentioned"] {
+  background: rgba(233, 140, 175, 0.25) !important;
+}
